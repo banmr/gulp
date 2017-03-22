@@ -1,0 +1,34 @@
+/*
+ * Variables
+ */
+
+$text-color: #333;
+$quiet-color: #ccc;
+$loud-color: #000;
+$heading-color: #111;
+
+$hr-border-width: 2px 0 0 0;
+
+$link-color: #d54aaf;
+$link-hover-color: saturate(#d54aaf, 20%);
+$link-visited-color: purple;
+
+$base-font-family: 'Roboto Condensed', sans-serif;
+$base-font-size: 18px;
+$base-line-height: 24px;
+$base-font-weight: 300;
+
+// $fixed-font-family: 'Andale Mono', AndaleMono, monospace;
+// $fixed-font-size: 15px;
+// $fixed-line-height: 1.2;
+
+$heading-font-family: 'Roboto Condensed', sans-serif;
+$heading-font-weight: 700;
+
+$body-bg: #fff;
+$container-width: 960px;
+//boder
+$base-boder-color: #000;
+$radius: 5px;
+//buttom
+$brand-primary: $quiet-color;

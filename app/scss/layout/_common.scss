@@ -1,0 +1,25 @@
+/* -------------------->>> COMMON <<<-------------------- */
+body{
+	background: $body-bg;
+    font-family: $base-font-family;
+    color: $text-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    overflow-x: hidden;
+}
+
+@include basehr($base-boder-color, $hr-border-width);
+
+.btn {
+	font-size: 1.066em;
+	padding: 6px 21px 7px;
+	@include transition(all 400ms ease-in-out);
+}
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #fff;
+	border-color: $brand-primary;
+	color: $brand-primary;
+}
+#header {
+	color: red;
+}
