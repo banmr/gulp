@@ -1,0 +1,21 @@
+header {
+	.container {
+		max-width: $full-width;
+	}
+	.social-header {
+		display: flex;
+		min-height: 82px;
+		align-items: center;
+		a {
+			font-size: 2rem;
+			line-height: 2.6rem;
+			padding: 0 1.1rem;
+			color: $menu-color;
+			@include transition(all 0.5s ease-in-out 0s);
+			
+			&:hover {
+				color: $text-theme-color;
+			}
+		}
+	}
+}

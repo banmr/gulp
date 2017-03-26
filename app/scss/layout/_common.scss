@@ -1,4 +1,7 @@
 /* -------------------->>> COMMON <<<-------------------- */
+html {
+	font-size: $global-font-size; //font-size: 62.5%; /* Mac dinh ve gia tri 10px */
+}
 body{
 	background: $body-bg;
     font-family: $base-font-family;
@@ -10,16 +13,11 @@ body{
 
 @include basehr($base-boder-color, $hr-border-width);
 
-.btn {
-	font-size: 1.066em;
-	padding: 6px 21px 7px;
-	@include transition(all 400ms ease-in-out);
+.container {
+	width: $full-width;
+	max-width: $container-width;
 }
-.btn-primary:hover, .btn-primary:focus {
-	background-color: #fff;
-	border-color: $brand-primary;
-	color: $brand-primary;
-}
-#header {
-	color: red;
+
+p {
+	margin-bottom: 15px;
 }

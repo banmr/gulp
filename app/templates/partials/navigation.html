@@ -1,15 +1,43 @@
 {% macro active(activePage='home') %}
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+    <header id="header">
+        <article class="container">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top col-md-12">
+                    <div class="container-fluid row">
+                        <div class="header-mobile-menu col-xs-4 visible-xs-inline-block hidden-sm">
+                            <div class="button-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="navbar-header col-md-2 col-sm-12 col-xs-4">
+                            <a class="navbar-brand" href="index.html" title="logo">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <div class="social-header hidden-md visible-sm-inline-block">
+                                <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" title="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" title="envelope"><i class="fa fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav col-md-8 col-sm-12 hidden-xs">                        
+                            <li class="{%if activePage == 'home' %}active{% endif %}"><a href="index.html">Home</a></li>
+                            <li class="{%if activePage == 'Locations' %}active{% endif %}"><a href="locations.html">Locations</a></li>
+                            <li class="{%if activePage == 'Menu' %}active{% endif %}"><a href="menu.html">Menu</a></li>
+                            <li class="{%if activePage == 'Contact' %}active{% endif %}"><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="social-header col-md-2 hidden-sm col-xs-4">
+                            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" title="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" title="envelope"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="{%if activePage == 'home' %}active{% endif %}"><a href="#">Home</a></li>
-                <li class="{%if activePage == 'page1' %}active{% endif %}"><a href="#">Page 1</a></li>
-                <li class="{%if activePage == 'page2' %}active{% endif %}"><a href="#">Page 2</a></li>
-                <li class="{%if activePage == 'page3' %}active{% endif %}"><a href="#">Page 3</a></li>
-            </ul>
-        </div>
-    </nav>
+        </article>
+    </header>
+    <!-- /header -->    
 {% endmacro %}

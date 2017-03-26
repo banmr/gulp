@@ -1,0 +1,13 @@
+.btn {
+	font-size: $btn-font-size;
+	letter-spacing: .01em;
+	padding: 1rem 2rem;	
+	background: $brand-primary-bg;
+	border-color: $brand-primary-bg;
+	@include transition(all 400ms ease-in-out);
+}
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #fff;
+	border-color: $brand-primary;
+	color: $brand-primary;
+}

@@ -1,18 +1,213 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
-{% import '../templates/partials/navigation.html' as nav %}{{nav.active('page1')}}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('home')}}
 {% include "../templates/partials/slider.html" %}
 
-	<section id="content">
+	<section id="location-block">
 	    <article class="container">
-	        11111111111
+	        <h1 class="title-block">LOCATION</h1>
+	        <div class="main-block row">
+	        	<div class="list-location-block col-md-6">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>Southern California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-location-block col-md-6">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>Southern California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-location-block col-md-3">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-location-block col-md-3">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-location-block col-md-3">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-location-block col-md-3">
+	        		<div class="main">
+	        			<a href="#" title="California">
+		        			<img src="images/Southern-California.jpg" alt="California">
+		        			<h2>California</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        </div>
 	    </article>
 	</section>
-	<!-- End section content -->
+	<!-- End section Location -->
 
-	<section id="channels">
+	<section id="dayly-specials">
+		<div class="bg-mask"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 thumb">
+					<img src="images/cinelli.jpeg" alt="title daly">
+				</div>
+				<div class="col-sm-6 text-box">
+					<h3>Daily Specials Monday</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur</p>
+					<a class="more" href="#" title="Daily Specials Monday">Read More <i class="fa fa-caret-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End section Dayli Specials -->
+
+	<section id="our-menu">
 	    <article class="container">            
-	        
+	        <h1 class="title-block">Explore our menu <button type="button" class="btn btn-primary">View Full Menu</button></h1>
+	        <div class="main-our-menu row">
+	        	<div class="list-our-menu col-sm-3 col-xs-6">
+	        		<div class="main">
+	        			<img src="images/menu-item-280x280.png" alt="Cindy S Casa Burger">
+	        			<h2>CINDY’S CASA BURGER</h2>
+	        		</div>
+	        	</div>
+	        	<div class="list-our-menu col-sm-3 col-xs-6">
+	        		<div class="main">
+	        			<img src="images/menu-item-280x280.png" alt="Cindy S Casa Burger">
+	        			<h2>CINDY’S CASA BURGER</h2>
+	        		</div>
+	        	</div>
+	        	<div class="list-our-menu col-sm-3 col-xs-6">
+	        		<div class="main">
+	        			<img src="images/menu-item-280x280.png" alt="Cindy S Casa Burger">
+	        			<h2>CINDY’S CASA BURGER</h2>
+	        		</div>
+	        	</div>
+	        	<div class="list-our-menu col-sm-3 col-xs-6">
+	        		<div class="main">
+	        			<img src="images/menu-item-280x280.png" alt="Cindy S Casa Burger">
+	        			<h2>CINDY’S CASA BURGER</h2>
+	        		</div>
+	        	</div>
+	        </div>
 	    </article>
 	</section>
+	<!-- End section Menu -->
+
+	<section id="welcome-block">
+		<div class="bg-mask"></div>
+		<article class="container">
+			<h1>Welcome to the homepage of King Kong Restaurants Fast causal experience for the whole family!</h1>
+		</article>
+	</section>
+	<!-- End section Welcome -->
+
+	<section id="menu-items">
+		<article class="container">
+			<h1 class="title-block">New Menu Items</h1>
+			<div class="main-menu-items">
+				<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+				<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items1-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items2-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items3-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items4-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/items5-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/item6-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/item7-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/item8-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+	        	<div class="list-menu-items">
+	        		<div class="main">
+	        			<a href="#" title="menu items title">
+		        			<img src="images/item9-300x300.jpg" alt="menu items title">
+		        			<h2>Menu items title</h2>
+		        		</a>
+	        		</div>
+	        	</div>
+			</div>
+		</article>
+	</section>
+	<!-- End section Menu Items -->
 {% endblock %}

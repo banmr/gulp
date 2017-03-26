@@ -104,6 +104,8 @@
     img {
         vertical-align: top;
         border: none;
+        width: 100%;
+        max-width: 100%;
     }
 }
 @mixin transform-style($style) {
@@ -119,14 +121,37 @@
     -moz-transition: $time;
     -o-transition: $time;
 }
+@mixin centeringPercentageWidthHeightElements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    webkit-transform: translate(-50%,-50%);
+    -khtml-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+@mixin img_block_product {
+    img {
+        height: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        z-index: 1;
+       @include centeringPercentageWidthHeightElements;
+    }
+}
 @mixin hover-color($color) {
     &:hover {
         color: $color;
     }
 }
-@mixin photo-content($file) {
-    content: url(#{$file}.jpg);
-    object-fit: cover;
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
 }
 //boder
 @mixin basehr($color, $border-width) {
@@ -158,6 +183,21 @@
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
+}
+@mixin title-blog {
+    text-align: center;
+    margin: $margin-title-h1;
+}
+@mixin padding_block {
+    padding: 20px 0 50px;
+}
+@mixin padding_block_notitle {
+    padding: 50px 0 50px;
+}
+@mixin flex-center-colum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /////
 

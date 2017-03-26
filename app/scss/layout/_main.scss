@@ -1,0 +1,245 @@
+.title-block {
+	@include title-blog;
+}
+#location-block {
+	@include background('../images/location-screen.png',0 0, repeat);
+	@include padding_block;
+	.list-location-block {
+		@include img_block_product;				
+		padding: 0 5px;		
+		margin: 5px 0;			
+		h2 {
+			@include font-styles(2.6rem, #fff);
+			@include transition(all 0.5s ease-in-out 0s);
+		    @extend %flex-center-colum;
+			background: rgba(36,32,30,.9);
+		    bottom: 0;
+		    left: 0;
+		    margin: 0;
+		    padding: 1.3rem 0;
+		    position: absolute;
+		    right: 0;
+		    text-align: center;
+		    z-index: 3;
+		    height: 50px;
+		}
+		.main {
+			position: relative;
+			overflow: hidden;
+			height: 25rem;			
+			&:hover h2{
+				height: 100%;
+			}
+		}
+	}
+}
+#dayly-specials {
+	@include padding_block_notitle;	
+	@include background('../images/cinelli.jpeg');
+	@extend %flex-center-colum;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 500px;
+	position: relative;
+
+	.bg-mask {
+	    @extend %bg-mask;
+	}
+	.container {
+		max-width: 1000px;
+		z-index: 9;
+		position: relative;
+	}
+	.thumb {
+		@include img;
+	}
+	.text-box {
+		h3 {
+			color: #fff;
+			margin: 20px 0;
+		}
+		p {
+			color: #fff;
+		}
+		.more {
+			display: block;
+			float: right;
+			@include font-styles(1.8rem);
+			margin-top: 10px; 
+		}
+	}
+}
+#our-menu {
+	@include background('../images/location-screen.png',0 0, repeat);
+	@include padding_block;
+	button {
+		vertical-align: text-top;
+	}
+	.list-our-menu {
+		@include img;
+		padding: 0 5px;
+		h2 {
+			@include font-styles(1.8rem, #fff, 300);
+			font-family: $base-font-family;
+			background: rgba(36,32,30,.9);
+		    bottom: 0;
+		    left: 0;
+		    margin: 0;
+		    padding: 1.3rem 0;
+		    position: absolute;
+		    right: 0;
+		    text-align: center;
+		    z-index: 3;
+		}
+		.main {
+			position: relative;
+			overflow: hidden;
+		}
+	}
+}
+#welcome-block {
+	@include padding_block_notitle;	
+	@include background('../images/affinity.jpeg');
+	@extend %flex-center-colum;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 300px;
+	position: relative;
+	text-align: center;
+	.bg-mask {
+	    @extend %bg-mask;
+	}
+	h1 {
+		color: #fff;
+		line-height: 4.5rem;
+		z-index: 9;
+		position: relative;
+	}
+}
+#menu-items {
+	@include padding_block;	
+	.main-menu-items {
+		display: flex;
+		flex-wrap: wrap;
+		.list-menu-items {
+			width: 20%;			
+			@include img_block_product;	
+			.main {
+				position: relative;
+				overflow: hidden;
+				@include aspect-ratio(6, 4);
+				h2 {
+				    background-color: rgba(0,0,0,.8);
+				    height: 100%;
+				    left: 0;
+				    opacity: 0;
+				    position: absolute;
+				    top: 0;
+				    width: 100%;
+				    z-index: 2;
+				    @include transition(all 0.5s ease-in-out 0s)
+				    @include font-styles(1.4rem, #fff, 300);
+				    @extend %flex-center-colum;
+				    &:hover {
+				    	opacity: 1;
+				    }
+				}
+			}
+		}
+	}
+}
+#breadcrumbs {
+	margin-top: 82px;
+	.container {
+		max-width: 105rem;
+		ol {
+		    margin: 1rem 0 .5rem;
+		    padding: 0;
+		    li {
+			    display: inline-block;
+			    a {
+			    	@include font-styles(1.4rem, #000, 500, 3rem);
+			    }
+			}
+		}
+	}
+}
+.content-page {	
+	@include padding_block;
+	.container {
+		max-width: 105rem;
+	}
+	.title-block {
+		margin-bottom: 70px;
+	}
+	.list-location-block {
+		margin-bottom: 40px;
+		h2 {
+			@include font-styles(1.6rem, #24201e);
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		@include img;
+	}
+	.des-page {
+		font-style: italic;
+	}
+}
+.locations-page {
+	@include background('../images/location-screen.png',0 0, repeat);
+}
+.block-title-page-menu {
+	@include padding_block_notitle;	
+	@include background('../images/affinity.jpeg');
+	@extend %flex-center-colum;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 300px;
+	position: relative;
+	text-align: center;
+	.bg-mask {
+	    @extend %bg-mask;
+	}
+	h1 {
+		color: #fff;
+		line-height: 4.5rem;
+		z-index: 9;
+		position: relative;
+	}
+}
+#menu-iteam-page {
+	@include padding_block_notitle;
+	text-align: center;
+	h2 {
+		@include font-styles(1.6rem, #24201e);
+		text-align: center;
+		margin: 20px 0;
+	}
+	.list-menu-iteam-page {
+		margin-bottom: 30px;
+		padding: 0 5px;
+		@include img;
+	}
+}
+.contact-title {
+	@include background('../images/contact.jpg');
+}
+.contact-page {
+	padding-top: 50px;
+	.mt30 {
+		margin-top: 50px; 
+	}
+	aside.sidebar-right {
+	    padding-left: 30px;
+	    border-left: 1px solid #d4d4d4;
+	    li {
+	    	margin-bottom: 25px;
+	    }
+	}
+}

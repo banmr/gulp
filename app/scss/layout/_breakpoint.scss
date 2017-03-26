@@ -1,0 +1,135 @@
+@media (min-width: 768px) and (max-width: 991px) { 
+	header {
+		.navbar-header {
+			@include flex-center-colum;
+		}
+		.social-header {
+			padding-top: 30px;
+		}
+	}
+	#menu-items {
+		.main-menu-items {
+			.list-menu-items {
+				width: 33.3%;
+			}
+		}
+	}
+	#breadcrumbs {
+		margin-top: 165px;
+	} 
+	.contact-page aside.sidebar-right {
+	    padding-left: 0;
+	    border-left: none;
+	    margin-top: 50px;
+	}
+}
+@media (max-width: 767px){
+	header {
+		.social-header {
+   	 		min-height: 40px;
+		}
+		.navbar-header {
+			@include flex-center-colum;
+		}
+		.navbar-brand {
+			img {
+		    	height: 30px;
+		    	width: auto;
+			}
+		}
+		.navbar-nav {
+			&.active {
+			    background-color: rgba(0,0,0,.9);
+			    display: block!important;
+			    height: 100%;
+			    left: 1.5rem;
+			    position: fixed;
+			    top: 0;
+			    width: 100%;
+			    z-index: 5;
+			    text-align: center;
+			    padding-top: 50px;
+			    li {
+			    	margin: 10px 0;
+			    	a {
+			    		padding: 0;
+			    		font-size: 2.4rem;
+			    	}
+			    }
+			}
+		}
+		.header-mobile-menu {
+			padding-top: 10px;
+		}
+		.button-menu {
+		    cursor: pointer;
+		    display: inline-block;
+		    margin-top: .3rem;
+		    position: relative;
+		    width: 3.2rem;
+		    z-index: 10;
+		    span {
+	    	    background-color: #f5821f;
+			    float: left;
+			    height: .5rem;
+			    margin-bottom: .5rem;
+			    width: 100%;
+			    border-radius: 1px;
+			    -webkit-transition: all 0.8s cubic-bezier(.25,.25,.115,1.5) 0s;
+			    transition: all 0.8s cubic-bezier(.25,.25,.115,1.5) 0s;
+		    }
+		    &.active {
+		    	span {
+		    		opacity: 0;
+				    -webkit-transform-origin: 7% 50%;
+				    -khtml-transform-origin: 7% 50%;
+				    transform-origin: 7% 50%;
+		    		&:first-child {
+					    opacity: 1;
+					    -webkit-transform: rotate(45deg);
+					    -khtml-transform: rotate(45deg);
+					    transform: rotate(45deg);
+					}
+					&:last-child {
+					    opacity: 1;
+					    -webkit-transform: rotate(-45deg);
+					    -khtml-transform: rotate(-45deg);
+					    transform: rotate(-45deg);
+					}
+		    	}
+		    }
+		}
+	}
+	#menu-items {
+		.main-menu-items {
+			.list-menu-items {
+				width: 50%;
+			}
+		}
+	}
+	.block-title-page-menu,
+	#welcome-block {
+		h1 {
+			font-size: 2.4rem;
+		}
+	}
+	footer {
+		.container {
+			&>div {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+	} 
+}
+ @media  (max-width: 480px){
+ 	#welcome-block {
+		h1 {
+			font-size: 1.7rem;
+			line-height: 2.3rem;
+		}
+	}
+	.title-block {
+		font-size: 2.4rem;
+	}
+ }

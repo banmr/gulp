@@ -78,7 +78,8 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 	// gulp.watch('app/fonts/*.+(eot|otf|svg|ttf|woff|woff2)', ['fonts']); // auto load fie js
 	// gulp.watch('app/css/**/*', ['style']);
 	gulp.watch('app/**/*.html', ['nunjucks']); // auto load fie js
-	gulp.watch('app/pages/**/*.+(html|nunjucks)', ['nunjucks']); // auto load fie js
+	gulp.watch('app/page/**/*.+(html|nunjucks)', ['nunjucks']); // auto load fie js
+	gulp.watch('app/templates/**/*.+(html|nunjucks)', ['nunjucks']); // auto load fie js
 	gulp.watch('app/js/*.js', browserSync.reload); // auto load fie js
 	gulp.watch('app/images/*.+(png|jpg|jpeg|gif|svg)', browserSync.reload); // auto load fie js
 	gulp.watch('app/fonts/*.+(eot|otf|svg|ttf|woff|woff2)', browserSync.reload); // auto load fie js
@@ -103,7 +104,7 @@ gulp.task('nunjucks', function() {
 // Default Task
 //Combine Gulp missions (one task 2)
 gulp.task('build', function (callback) {// build khi bat dau va build khi ket thuc (vi khi xoa fie ben dis ko xoa)
-  runSequence('clean:dist', 'cache:clear', 
+  runSequence('clean:dist', 
     ['sass','html','images','fonts','style','js'],
     callback
   )
